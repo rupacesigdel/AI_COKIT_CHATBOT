@@ -6,7 +6,6 @@ def chat_view(request):
     try:
         copilot = copilotkit.CopilotKitState(api_key='ck_pub_a001bbe9ba7329b1e8f207a9d9ca0f1a')
     except AttributeError as e:
-        print(f"Error: {e}")
         return render(request, 'chatbot/chat.html', {'error': 'CopilotKit Client is not available.'})
 
     if request.method == 'POST':
@@ -19,7 +18,6 @@ def chat_view(request):
                 bot_response = bot_response.get('response', 'No response found')
 
         except Exception as e:
-            print(f"Error during chat response generation: {e}")
             return render(request, 'chatbot/chat.html', {'error': 'Error generating chat response.'})
 
         chat = Chat.objects.create(user_message=user_message, bot_response=bot_response)

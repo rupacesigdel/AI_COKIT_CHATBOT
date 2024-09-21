@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="chat-container">
-        <h2>Customer Support Chatbot</h2>
+        <h2>Ask Me Anything</h2>
         <div class="chat-box">
             {% for chat in chats %}
             <div class="chat-message">
@@ -17,12 +17,14 @@
                 <strong>Bot:</strong> {{ chat.bot_response }}<br>
             </div>
             {% empty %}
-            <p>No messages yet.</p>
+            <p>hi!👋
+                how can i assist you today?😊
+            </p>
             {% endfor %}
         </div>
         <form method="post" action="">
             {% csrf_token %}
-            <input type="text" name="message" placeholder="Type your message here..." required>
+            <input type="text" name="message" placeholder="type your message here..." required>
             <button type="submit">Send</button>
         </form>
     </div>
