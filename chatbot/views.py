@@ -13,7 +13,7 @@ def chat_view(request):
 
         try:
             print(f"User message: {user_message}")
-            bot_response = copilot  
+            bot_response = copilot
             if isinstance(bot_response, dict):
                 bot_response = bot_response.get('response', 'No response found')
 
