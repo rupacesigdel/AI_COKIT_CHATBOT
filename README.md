@@ -7,17 +7,13 @@ This project is a chatbot web application built using Django and the CopilotKit 
 ## Contain
 
 - [Features](#features)
-- [Demo Video](#demo-video)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
-## Demo Video
-[Watch the demo video]()
 
 ## Features
 
@@ -72,40 +68,6 @@ This project is a chatbot web application built using Django and the CopilotKit 
       ```bash
       python manage.py migrate
       ```
-
-
-## Project Structure
-- AI_COKIT_CHATBOT/
-- │
-- ├── chatbot/
-- │   ├── __init__.py
-- │   ├── admin.py
-- │   ├── apps.py
-- │   ├── forms.py
-- │   ├── models.py
-- │   ├── tests.py
-- │   ├── views.py
-- │   ├── fraud_detection.py
-- │   ├── templates/
-- │   │   └── chatbot/
-- │   │       ├── chat.html
-- │   ├── static/
-- │   │   └── chatbot/
-- │   │       └── styles.css
-- │   └── migrations/
-- │       └── __init__.py
-- │
-- ├── Co_chatbot/
-- │   ├── __init__.py
-- │   ├── asgi.py
-- │   ├── settings.py
-- │   ├── urls.py
-- │   ├── wsgi.py
-- │
-- ├── manage.py
-- ├── README.md
-- └── requirements.txt
-
 
 
 ## Usage
